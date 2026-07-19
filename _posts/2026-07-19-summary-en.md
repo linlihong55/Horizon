@@ -5,208 +5,193 @@ date: 2026-07-19
 lang: en
 ---
 
-> From 35 items, 9 important content pieces were selected
+> From 25 items, 8 important content pieces were selected
 
 ---
 
-1. [LG monitors silently install software via Windows Update without consent](#item-1) ⭐️ 9.0/10
-2. [TSMC A14 process achieves 90% yield and performance ahead of schedule](#item-2) ⭐️ 9.0/10
-3. [HK fire report reveals contractor violations and regulatory collapse](#item-3) ⭐️ 9.0/10
-4. [Fable 5 vs GPT-5.6 Sol on NP-Hard Problem: Does /goal help?](#item-4) ⭐️ 8.0/10
-5. [SO Activity Decline Graph Attributed to AI Tools](#item-5) ⭐️ 8.0/10
-6. [Chinese AI Model Kimi K3 Reaches Frontier via Distillation](#item-6) ⭐️ 8.0/10
-7. [US Considers FINRA-Like AI Watchdog for Top Models](#item-7) ⭐️ 8.0/10
-8. [San Francisco Orders Apple and Google to Remove &\#x27;Nudify&\#x27; Apps](#item-8) ⭐️ 8.0/10
-9. [Honor Unveils Agentic OS Framework at WAIC 2026](#item-9) ⭐️ 8.0/10
+1. [Show HN: $1,600 ESP32s replace $120k bowling scoring system](#item-1) ⭐️ 8.0/10
+2. [Alibaba Qwen 3.8: 2.4T Parameter Open-Weight LLM](#item-2) ⭐️ 8.0/10
+3. [Lessons from selling 2500 MIDI recorders](#item-3) ⭐️ 8.0/10
+4. [AI Mania Eviscerates Global Decision-Making](#item-4) ⭐️ 8.0/10
+5. [Explore GPT-2&\#x27;s 32K tokens as a hyperbolic tree in a Poincaré ball](#item-5) ⭐️ 8.0/10
+6. [Honor Unveils Agentic OS Framework for Intent-Centric Mobile OS](#item-6) ⭐️ 8.0/10
+7. [Alibaba open-sources SAIL to challenge Nvidia CUDA](#item-7) ⭐️ 8.0/10
+8. [US Politicians Optimize Online Presence to Influence AI Chatbots](#item-8) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [LG monitors silently install software via Windows Update without consent](https://videocardz.com/newz/lg-monitors-silently-install-software-through-windows-update-without-user-consent) ⭐️ 9.0/10
+## [Show HN: $1,600 ESP32s replace $120k bowling scoring system](https://news.ycombinator.com/item?id=48968606) ⭐️ 8.0/10
 
-LG monitors are secretly installing software through Windows Update without user consent, triggered merely by plugging in a monitor via HDMI. This software has full system and internet access and starts with every boot. This practice poses a major security and privacy risk, as it allows a third-party vendor to automatically install potentially unwanted software with elevated privileges on millions of Windows systems. It undermines user control and trust in both LG and Microsoft. The software is installed via Windows Update&\#x27;s automatic driver distribution mechanism, without any user interaction. It affects not only new LG monitor connections but also users who already have an older LG monitor plugged in, as the software may be pushed retroactively.
+A bowling center owner built a custom scoring system using ESP32 microcontrollers for $1,600, replacing a proprietary system that cost $80,000–$120,000. The project, called OpenLaneLink, uses ESPNow mesh networking, Redis event streaming, and React for the UI. This demonstrates how open hardware and software can dramatically reduce costs for niche legacy systems, empowering small business owners to escape vendor lock-in. It also highlights the versatility of ESP32s for real-time industrial-like control applications. The system uses an ESPNow star topology mesh with RS485 as a wired fallback, connected to a Raspberry Pi via UART. Each lane pair costs about $200 for the custom board, with pre-flashed spare controllers for quick repairs.
 
-hackernews · baranul · Jul 18, 10:21 · [Discussion](https://news.ycombinator.com/item?id=48956688)
+hackernews · section33 · Jul 19, 14:41
 
-**Background**: Windows Update includes a feature that automatically downloads and installs recommended drivers from hardware manufacturers. This mechanism is intended to keep devices up-to-date, but it can be abused to push arbitrary software if Microsoft does not strictly vet the driver packages. In this case, LG&\#x27;s monitor driver package includes additional software beyond what is necessary for basic functionality.
+**Background**: ESP32 is a low-cost, low-power microcontroller family with built-in Wi-Fi and Bluetooth, widely used in IoT projects. Bowling scoring systems traditionally integrate pin detection, ball speed, foul sensors, and pinsetter control, often costing tens of thousands of dollars from specialized vendors.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://support.microsoft.com/en-us/windows/automatically-get-recommended-and-updated-hardware-drivers-0549a8d9-4842-8acb-75fa-a6faadb62507">Automatically get recommended and updated hardware drivers | Microsoft Support</a></li>
-<li><a href="https://learn.microsoft.com/en-us/windows-hardware/drivers/dashboard/understanding-windows-update-automatic-and-optional-rules-for-driver-distribution">Understanding Windows Update rules for driver distribution - Windows drivers | Microsoft Learn</a></li>
-<li><a href="https://asibiont.com/en/blog/monitory-lg-tayno-ustanavlivayut-po-cherez-windows-update-bez-vashego-soglasiya-chto-proiskhodit-i-kak-zashchititsya">LG Monitors Silently Install Software Through... — ASI Biont Blog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ESP32">ESP32</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pinsetter">Pinsetter - Wikipedia</a></li>
+<li><a href="https://invention.si.edu/invention-stories/set-em-knock-em-down-bowlings-automated-pin-technology">Set Em’ Up! Knock Em’ Down! Bowling’s Automated Pin Technology | Lemelson</a></li>
 
 </ul>
 </details>
 
-**Discussion**: The community response is strongly critical, with users calling the behavior malware-like and blaming both LG and Microsoft. Comments highlight that the software runs with full system access, starts on boot, and is installed automatically without consent. Some users provided workarounds using Group Policy or Device Installation Settings to block such installations.
+**Discussion**: Commenters shared similar experiences: one also owns a mini bowling lane with vintage Intel MCUs, another grew up around mechanical AMF machines with relay logic. There was enthusiasm for expansion ideas like LED chase effects and DMX lighting, and general praise for the project&\#x27;s approach to open-sourcing the design.
 
-**Tags**: `#security`, `#privacy`, `#windows`, `#lg`, `#driver`
+**Tags**: `#embedded systems`, `#ESP32`, `#bowling`, `#cost-saving`, `#retrofitting`
 
 ---
 
 <a id="item-2"></a>
-## [TSMC A14 process achieves 90% yield and performance ahead of schedule](https://www.tomshardware.com/tech-industry/semiconductors/tsmc-confirms-significant-yield-and-performance-improvements-in-a14-update-strong-interest-from-ai-hpc-and-smartphone-customers) ⭐️ 9.0/10
+## [Alibaba Qwen 3.8: 2.4T Parameter Open-Weight LLM](https://twitter.com/Alibaba_Qwen/status/2078759124914098291) ⭐️ 8.0/10
 
-TSMC announced that its A14 \(1.4nm\) process node has reached nearly 90% yield and performance targets in internal tests, ahead of the original schedule, with mass production still expected in 2028. This faster-than-expected progress accelerates the timeline for next-generation AI, HPC, and smartphone chips, strengthening TSMC&\#x27;s competitive edge and impacting the entire semiconductor ecosystem. The A14 node uses second-generation GAA nanosheet transistors, offering 10-15% higher performance at same power or 25-30% lower power at same frequency compared to N2, with a 23% increase in logic transistor density.
+Alibaba announced Qwen 3.8, a 2.4 trillion parameter open-weights large language model, in response to Moonshot AI&\#x27;s Kimi K3 \(2.8T parameters\). The model will be released on Hugging Face, though exact dates are not confirmed. This release intensifies competition in the large open-weight LLM space, potentially accelerating progress and lowering costs for AI research and applications. Developers and enterprises gain access to a very large model that was previously only available via proprietary APIs. Despite the &\#x27;open-weights&\#x27; label, running Qwen 3.8 requires datacenter-level hardware due to its 2.4T parameter size, similar to Kimi K3. Alibaba also offers a paid API tier \(Qwen 3.8 Max\) for those who cannot run the model locally.
 
-telegram · zaihuapd · Jul 18, 05:00
+hackernews · nh43215rgb · Jul 19, 08:44 · [Discussion](https://news.ycombinator.com/item?id=48966120)
 
-**Background**: Gate-all-around \(GAA\) nanosheet transistors are a key technology for scaling beyond 2nm, replacing FinFET to improve electrostatic control. Semiconductor yield rate measures the percentage of functional chips per wafer. TSMC&\#x27;s A14 is the company&\#x27;s 1.4nm-class node following N2, targeting high-performance applications.
+**Background**: Qwen is a family of large language models developed by Alibaba Cloud. Moonshot AI recently announced Kimi K3, a 2.8T parameter open-weights LLM, prompting Alibaba&\#x27;s competitive response. Open-weights models allow users to download and run the model weights, but very large models still require substantial computational resources.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.patsnap.com/resources/blog/articles/gaa-transistors-at-2nm-nanosheet-architecture-explained/">GAA transistors at 2nm: nanosheet architecture explained | PatSnap</a></li>
-<li><a href="https://wccftech.com/tsmc-1-4nm-process-faces-no-obstacles-as-risk-production-to-start-in-2027/">TSMC ’s Facing No Development Obstacles With Its Next-Generation...</a></li>
-<li><a href="https://min.news/en/tech/8eaf420f7aa874f0e6975d9858e0c817.html">The &quot; yield pain&quot; of the semiconductor industry - iMedia</a></li>
+<li><a href="https://insiderllm.com/guides/open-weights-you-cant-run/">Qwen 3 . 8 &amp; Kimi K3: Open in Name, Closed in Practice... | InsiderLLM</a></li>
+<li><a href="https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html">China&#x27;s Moonshot AI unveils Kimi K3 that rivals OpenAI, Anthropic - CNBC</a></li>
+<li><a href="https://huggingface.co/Qwen">Org profile for Qwen on Hugging Face, the AI community building the...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#semiconductor`, `#TSMC`, `#A14`, `#GAA`, `#AI hardware`
+**Discussion**: Community members are excited about the announcement, with many hoping for smaller versions \(e.g., 20B or 35B\) for local use. Some note the competition benefits users, while others express frustration over limited accessibility due to hardware requirements.
+
+**Tags**: `#LLM`, `#open-source`, `#AI`, `#Alibaba Qwen`, `#large language model`
 
 ---
 
 <a id="item-3"></a>
-## [HK fire report reveals contractor violations and regulatory collapse](https://china.caixin.com/2026-07-17/102465415.html) ⭐️ 9.0/10
+## [Lessons from selling 2500 MIDI recorders](https://chipweinberger.com/articles/20260719-hardware-is-not-so-hard) ⭐️ 8.0/10
 
-An independent investigation into the 2025 Hong Kong fire released a 627-page report alleging that the contractor used non-fire-retardant materials and forged certificates, and that multiple government agencies failed in oversight. This fire killed 168 people and exposed systemic failures in building safety regulation in Hong Kong, potentially leading to major reforms in construction oversight and accountability. The report says the contractor used non-flame-retardant safety nets and foam boards, tampered with fire safety systems, and that the Housing Bureau&\#x27;s review unit ignored complaints and gave advance notice of inspections.
+A developer published a detailed account of designing, manufacturing, and selling 2,500 units of a MIDI recorder, arguing that hardware development is not as hard as its reputation suggests. The piece offers practical, firsthand insights for hardware entrepreneurs, challenging the venture capital narrative that hardware is inherently difficult and expensive, potentially lowering the barrier for solo developers and small teams. The author walked through the entire product lifecycle, from initial prototype to manufacturing and customer support, emphasizing that a simple bill of materials \(25 components\) and off-the-shelf enclosures kept complexity low.
 
-telegram · zaihuapd · Jul 18, 10:01
+hackernews · chipweinberger · Jul 19, 10:34 · [Discussion](https://news.ycombinator.com/item?id=48966713)
 
-**Background**: In building renovations, contractors are required to use fire-retardant materials to prevent rapid fire spread. The use of non-retardant materials can lead to vertical fire spread through atriums or shafts, as happened in this fire when flames traveled along the building&\#x27;s lightwell.
+**Background**: MIDI \(Musical Instrument Digital Interface\) is a technical standard that allows electronic musical instruments to communicate with each other and with computers. A MIDI recorder captures performance data like note pitch and velocity, typically used for music production and editing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.nfpa.org/news-blogs-and-articles/blogs/2022/04/29/atrium-design-considerations">Atrium Design Considerations | NFPA</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1877705816001119">Experimental Study on Vertical Fire Spread of Thin Hanging Combustibles - ScienceDirect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a></li>
+<li><a href="https://midi-recorder.web.app/">MIDI Recorder</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#disaster`, `#investigation`, `#building safety`, `#regulatory failure`, `#Hong Kong`
+**Discussion**: Commenters highlighted that hardware difficulty scales with production volume and product complexity, and that the author&\#x27;s simple design was key to success. Some praised the JamCorder product itself, while others noted that the &\#x27;hardware is hard&\#x27; mantra often comes from VC expectations of 100x returns.
+
+**Tags**: `#hardware`, `#entrepreneurship`, `#product design`, `#lessons learned`, `#midi`
 
 ---
 
 <a id="item-4"></a>
-## [Fable 5 vs GPT-5.6 Sol on NP-Hard Problem: Does /goal help?](https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/) ⭐️ 8.0/10
+## [AI Mania Eviscerates Global Decision-Making](https://simonwillison.net/2026/Jul/19/ai-mania/#atom-everything) ⭐️ 8.0/10
 
-A blog post compares Anthropic&\#x27;s Fable 5 and OpenAI&\#x27;s GPT-5.6 Sol on an NP-hard combinatorial optimization problem, testing whether a &\#x27;/goal&\#x27; instruction improves performance. This evaluation sheds light on how different AI models handle complex reasoning tasks with explicit goal-setting, which is relevant for real-world applications like logistics or scheduling. The chart uses an inverted y-axis where &\#x27;lower is better&\#x27; but visual height indicates better performance, causing confusion. GPT-5.6 Sol recently set a state-of-the-art on the Artificial Analysis Coding Agent Index, 2.8 points above Fable 5 while using less than half the tokens.
+An article by Nik Suresh criticizes how AI hype is leading to irrational decisions in large companies, featuring anecdotes like an executive confessing to never using AI while authoring an AI-centered strategy. It highlights a dangerous trend where fear of missing out drives organizations to adopt AI without critical evaluation, potentially wasting resources and undermining genuine innovation. The article includes examples such as an engineer rewriting a Go repository in Zig solely to justify their role, and executives avoiding honesty to maintain customer relationships.
 
-hackernews · couAUIA · Jul 18, 11:00 · [Discussion](https://news.ycombinator.com/item?id=48956879)
+rss · Simon Willison · Jul 19, 05:06
 
-**Background**: NP-hard problems are among the most difficult to solve optimally, requiring heuristic or approximation methods. &\#x27;/goal&\#x27; is a prompt instruction that aims to focus the model on a specific objective, similar to goal-oriented AI. Fable 5 is Anthropic&\#x27;s high-end model for long tasks, while GPT-5.6 Sol is OpenAI&\#x27;s top coding model with three tiers \(Sol, Terra, Luna\).
+**Background**: Zig is a systems programming language aiming to be an improvement over C, known for manual memory management and compile-time generics. The article uses it to illustrate absurd AI mandates.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://free.ai/models/anthropic-claude-fable-5/">Anthropic: Claude Fable 5 - AI Chat | Free.ai</a></li>
-<li><a href="https://www.vellum.ai/blog/gpt-5-6-benchmarks-explained">GPT - 5 . 6 Sol vs Terra vs Luna: Which Tier Should You Actually Use?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Zig_%28programming_language%29">Zig (programming language)</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters noted chart confusion, suggested &\#x27;ultra mode&\#x27; for better search, and observed that Claude forgets instructions in long sessions. Some argued GPT is stronger in optimization tasks given its recent win in an AtCoder heuristics competition.
-
-**Tags**: `#AI comparison`, `#NP-hard`, `#GPT`, `#Fable`, `#LLM reasoning`
+**Tags**: `#AI hype`, `#critical analysis`, `#software engineering`, `#decision-making`, `#tech culture`
 
 ---
 
 <a id="item-5"></a>
-## [SO Activity Decline Graph Attributed to AI Tools](https://data.stackexchange.com/stackoverflow/query/1953768#graph) ⭐️ 8.0/10
+## [Explore GPT-2&\#x27;s 32K tokens as a hyperbolic tree in a Poincaré ball](https://www.reddit.com/r/MachineLearning/comments/1v0pv45/follow_up_gpt2s_vocabulary_as_a_hyperbolic_tree/) ⭐️ 8.0/10
 
-A graph from Stack Exchange Data Explorer shows a significant decline in StackOverflow activity, with many attributing the drop to the rise of AI tools like ChatGPT that provide direct answers. This trend highlights the existential challenge AI poses to traditional Q&amp;A platforms, potentially reshaping how developers seek help and collaborate online. The graph indicates that activity peaked around 2014, well before AI became mainstream, suggesting other factors like platform policies also contributed to the decline.
+An interactive visualization maps GPT-2&\#x27;s 32,070 token embeddings into a Poincaré ball, allowing users to fly through hyperbolic space via Möbius translations, revealing the natural tree structure of the vocabulary. This demo makes the abstract concept of hyperbolic embeddings tangible, showing how language model token relationships form hierarchical trees that fit naturally into hyperbolic geometry, which could inspire better representation learning. The visualization uses GPT-2-small&\#x27;s raw token embeddings without any training or optimization, and the layout is constructed exactly. It runs on mobile devices, and users can rotate, zoom, and tap tokens to navigate via Möbius translation.
 
-hackernews · secretslol · Jul 18, 11:12 · [Discussion](https://news.ycombinator.com/item?id=48956949)
+reddit · r/MachineLearning · /u/Limp-Contest-7309 · Jul 19, 12:54
 
-**Background**: StackOverflow is a popular Q&amp;A site for programmers where users ask and answer technical questions. Its strict moderation policies, such as closing duplicate questions and requiring reputation to participate, created high barriers for newcomers. The rise of AI assistants like ChatGPT offers instant, conversational answers without the need to navigate platform rules.
+**Background**: Hyperbolic geometry is a non-Euclidean geometry where space expands exponentially with distance from a point, making it ideal for embedding tree-like structures. The Poincaré ball model represents hyperbolic space as points inside a unit ball, where distances are distorted but trees can be embedded with low distortion. Möbius transformations are the natural isometries of this space, allowing smooth movement while preserving hyperbolic angles.
 
-**Discussion**: Commenters widely agree that StackOverflow&\#x27;s decline was self-inflicted due to high barriers to participation and a focus on strict Q&amp;A format over community building. Some note that the decline began before ChatGPT, pointing to the 2014 peak and the 2021 acquisition by Prosus. Others contrast LLMs&\#x27; helpfulness with StackOverflow&\#x27;s unwelcoming culture.
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Poincar%C3%A9_ball_model">Poincaré ball model</a></li>
+<li><a href="https://arxiv.org/pdf/1705.08039">Poincaré Embeddings for Learning Hierarchical Representations Maximilian Nickel</a></li>
 
-**Tags**: `#StackOverflow`, `#AI impact`, `#community dynamics`, `#software engineering`, `#data analysis`
+</ul>
+</details>
+
+**Tags**: `#GPT-2`, `#token embeddings`, `#hyperbolic geometry`, `#data visualization`, `#machine learning`
 
 ---
 
 <a id="item-6"></a>
-## [Chinese AI Model Kimi K3 Reaches Frontier via Distillation](https://stephen.bochinski.dev/blog/2026/07/18/the-kimi-k3-moment/) ⭐️ 8.0/10
+## [Honor Unveils Agentic OS Framework for Intent-Centric Mobile OS](https://wallstreetcn.com/articles/3777328) ⭐️ 8.0/10
 
-Chinese AI model Kimi K3 has achieved frontier-level performance reportedly through distillation from advanced models, triggering debate over national security and open-weight access. This development challenges the competitive edge of Western AI labs and raises questions about regulatory responses to open-weight models perceived as national security risks. Distillation is a technique where a smaller &\#x27;student&\#x27; model learns from a larger &\#x27;teacher&\#x27; model; Kimi K3&\#x27;s pricing and context length limitations have been noted by users.
+Honor announced its Agentic OS technology framework at the 2026 World AI Conference, shifting from an app-centric to an intent-centric mobile operating system, and partnering with Alibaba&\#x27;s Qwen to develop an on-device large language model solution. This marks a paradigm shift in mobile OS design toward AI-driven, intent-aware interactions, potentially making smartphones more autonomous and user-friendly, and differentiating Honor in the competitive smartphone market. The framework enables the system to automatically understand user intent and decompose tasks, demonstrated by Honor&\#x27;s Robot Phone that can execute cross-app tasks via natural language. The collaboration with Qwen focuses on deploying a large language model on-device for efficient, private inference.
 
-hackernews · sbochins · Jul 18, 17:32 · [Discussion](https://news.ycombinator.com/item?id=48960218)
+telegram · zaihuapd · Jul 19, 02:06
 
-**Background**: AI model distillation involves transferring knowledge from a large, complex model to a smaller, more efficient one, reducing compute and cost. Open-weight models allow public access to trained parameters, raising dual-use concerns.
+**Background**: Traditional mobile operating systems are app-centric, requiring users to manually open and interact with individual applications. An intent-centric OS leverages AI to understand user goals and automate multi-step tasks across apps. On-device large language models \(LLMs\) like those from Alibaba&\#x27;s Qwen family can process data locally, enhancing privacy and reducing latency. Agentic systems refer to AI agents that can autonomously plan and execute actions to fulfill user goals.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.flozic.ai/blog/ai-model-distillation">AI Model Distillation : Smarter AI with Less Compute</a></li>
+<li><a href="https://grokipedia.com/page/On-device_large_language_model">On-device large language model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Qwen">Qwen - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters note that distillation was an inevitable outcome given the open nature of frontier models, and some compare potential government restrictions to the Napster era. A user reported that Kimi K3 performed slower and consumed more quota on a task compared to OpenAI&\#x27;s offering, while others highlighted pricing tiers and context length limits.
-
-**Tags**: `#AI`, `#LLMs`, `#distillation`, `#open-source`, `#China`
+**Tags**: `#AI`, `#mobile OS`, `#agentic systems`, `#Honor`, `#on-device LLM`
 
 ---
 
 <a id="item-7"></a>
-## [US Considers FINRA-Like AI Watchdog for Top Models](https://www.bloomberg.com/news/articles/2026-07-17/us-considers-creating-finra-like-watchdog-to-vet-top-ai-models) ⭐️ 8.0/10
+## [Alibaba open-sources SAIL to challenge Nvidia CUDA](https://www.scmp.com/tech/tech-war/article/3361048/alibaba-targets-nvidias-dominant-software-ecosystem-open-source-ai-stack) ⭐️ 8.0/10
 
-The Trump administration is considering creating an independent AI regulator modeled after FINRA to vet top AI models, addressing cybersecurity concerns and industry pushback. If enacted, this would mark a major shift in AI regulation, potentially giving industry more influence over safety standards while creating a formal oversight body for frontier AI models. The plan is being led by Treasury Secretary Scott Bessent and reviewed by White House Chief of Staff Susie Wiles, and aligns with a recent proposal by Google DeepMind CEO Demis Hassabis.
+Alibaba&\#x27;s chip unit T-Head open-sourced its SAIL software stack for Zhenwu AI chips on July 18 at the World AI Conference in Shanghai, aiming to reduce migration barriers and weaken Nvidia&\#x27;s CUDA dominance. This move could accelerate adoption of domestic AI chips in China and reduce reliance on Nvidia&\#x27;s ecosystem, impacting the AI chip market and developer tools. Developers can adapt SAIL to mainstream AI frameworks within 7 days with minimal code changes. Alibaba has shipped 560,000 Zhenwu chips to over 400 enterprise customers across 20 industries as of April.
 
-telegram · zaihuapd · Jul 18, 05:45
+telegram · zaihuapd · Jul 19, 07:34
 
-**Background**: FINRA is a self-regulatory organization that oversees brokerage firms in the U.S., operating under SEC oversight. Proponents argue a similar model could balance industry innovation with government oversight for AI safety.
+**Background**: Nvidia&\#x27;s CUDA is a proprietary software platform that locks developers into its GPU ecosystem. Open-source alternatives like SAIL aim to lower switching costs. Alibaba joins Huawei and Moore Threads in building open-source software for Chinese AI chips.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Financial_Industry_Regulatory_Authority">Financial Industry Regulatory Authority - Wikipedia</a></li>
-<li><a href="https://www.androidheadlines.com/2026/07/google-deepmind-ceo-proposes-us-ai-watchdog-finra.html">DeepMind CEO Proposes US-Led AI Standards Watchdog</a></li>
+<li><a href="https://www.scmp.com/tech/tech-war/article/3361048/alibaba-targets-nvidias-dominant-software-ecosystem-open-source-ai-stack">Alibaba targets Nvidia’s dominant software ecosystem with open-source AI stack | South China Morning Post</a></li>
+<li><a href="https://www.ibtimes.sg/alibaba-takes-aim-nvidias-ai-empire-china-opens-chip-software-break-cudas-global-grip-90082">Alibaba Takes Aim at Nvidia&#x27;s AI Empire: China Opens Chip Software to Break CUDA&#x27;s Global Grip</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI regulation`, `#policy`, `#Trump administration`, `#FINRA`, `#AI safety`
+**Tags**: `#open source`, `#AI chips`, `#CUDA`, `#software stack`, `#cloud AI`
 
 ---
 
 <a id="item-8"></a>
-## [San Francisco Orders Apple and Google to Remove &\#x27;Nudify&\#x27; Apps](https://techcrunch.com/2026/07/17/apple-and-google-ordered-to-purge-nudify-apps-from-app-stores/) ⭐️ 8.0/10
+## [US Politicians Optimize Online Presence to Influence AI Chatbots](https://www.nytimes.com/2026/07/19/us/politics/chatbots-political-campaigns.html) ⭐️ 8.0/10
 
-San Francisco City Attorney David Chiu has ordered Apple and Google to remove dozens of &\#x27;nudify&\#x27; apps from their app stores. These apps use AI to generate non-consensual intimate deepfake images by &\#x27;undressing&\#x27; people in photos. This action highlights the growing regulatory pressure on tech platforms to address AI-generated non-consensual deepfake images, which pose serious privacy and ethical concerns. It could set a precedent for platform responsibility in curbing harmful AI applications. The Tech Transparency Project had warned about around 100 such apps across both app stores earlier this year. Apple says it has removed three specific apps and terminated related developer accounts, while Google has paused five named Play apps.
+US political campaigns are actively optimizing their online content to influence how AI chatbots like ChatGPT describe candidates, a practice called answer engine optimization \(AEO\). A recent example is Missouri Democratic primary candidate Dustin Lloyd, who adjusted his website and published Q&amp;As to shift ChatGPT&\#x27;s recommendation from his opponent to himself. This development introduces a new vector for manipulation in political campaigns, as AI chatbots become a common source of voter information. If left unchecked, foreign actors could exploit similar techniques to spread misinformation, undermining electoral integrity and public trust. Research shows that new Wikipedia content can be ingested by chatbots within about 12 minutes, and in a Scottish election experiment, over one-third of AI responses contained errors. The emerging AEO industry provides tools for candidates to check and influence AI-generated answers.
 
-telegram · zaihuapd · Jul 18, 08:45
+telegram · zaihuapd · Jul 19, 13:19
 
-**Background**: &\#x27;Nudify&\#x27; apps use generative adversarial networks \(GANs\) and diffusion models to create realistic fake nude images from ordinary photos. This technology has raised alarm due to its potential for harassment, revenge porn, and exploitation. San Francisco&\#x27;s action is among the first direct government orders to app store operators to remove such apps, citing potential financial gain from these apps and civil penalties.
+**Background**: Answer engine optimization \(AEO\) is the practice of structuring content so that AI systems like ChatGPT and Google AI Overviews easily extract and display it as answers to user queries. It builds on traditional SEO but focuses on optimizing for generative AI models. As voters increasingly turn to chatbots for candidate information, campaigns must now tailor their online presence for both human readers and machine parsers.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.wired.com/story/san-francisco-demands-apple-and-google-delete-ai-nudify-apps-from-app-stores/">San Francisco Demands Apple and Google Delete AI ‘Nudify’ Apps From App Stores | WIRED</a></li>
+<li><a href="https://zh.wikipedia.org/zh-cn/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96">搜索引擎优化 - 维基百科，自由的百科全书</a></li>
+<li><a href="https://dageno.ai/zh/blog/best-practices-for-answer-engine-optimization-in-ai-industry">人工智能行业答案引擎优化最佳实践</a></li>
+<li><a href="https://www.ranktracker.com/zh/blog/what-is-answer-engine-optimization/">什么是答案引擎优化（AEO）？完全入门指南</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI伦理`, `#深度伪造`, `#平台责任`, `#隐私`, `#监管`
-
----
-
-<a id="item-9"></a>
-## [Honor Unveils Agentic OS Framework at WAIC 2026](https://wallstreetcn.com/articles/3777328) ⭐️ 8.0/10
-
-Honor announced the Agentic OS technical framework at WAIC 2026, shifting mobile OS interaction from an app-centric to an intent-centric model, where users only need to state their goal and the system autonomously understands and decomposes tasks. This framework represents a fundamental shift in mobile OS design, potentially making AI the core of user interaction and moving differentiation from hardware to the operating system level. Honor partnered with Alibaba Qwen to develop a terminal-specific large model solution for smartphones, and demonstrated a Robot Phone prototype that executes cross-app tasks via natural language.
-
-telegram · zaihuapd · Jul 19, 02:06
-
-**Background**: Agentic OS is a new architecture that treats the OS as an intelligent agent capable of understanding user intent, planning, and executing tasks across apps, moving beyond traditional app-launcher-based interfaces. This aligns with industry trends toward AI-native operating systems, where large language models serve as the core orchestration layer. Honor&\#x27;s approach integrates a terminal-side large model to ensure privacy and low latency.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/KbWen/agentic-os">GitHub - KbWen/agentic-os: Governance framework for AI coding agents. It runs them through a five-step workflow (plan, build, review, test, ship) where no step counts as done without evidence. Drop-in rules and guardrails for Claude Code, Codex, Cursor, Copilot, and Antigravity, via AGENTS.md. · GitHub</a></li>
-<li><a href="https://xebia.com/solutions/agentic-os-platform/">Agentic OS | Enterprise AI Orchestration Platform &amp; Agent Management | Xebia</a></li>
-<li><a href="https://d33gy59ovltp76.cloudfront.net/news/forget-the-dji-pocket-4-honor-s-robot-phone-concept-builds-a-gimbal-mounted-camera-into-your-smartphone">Forget the DJI Pocket 4 – Honor&#x27;s ‘ Robot Phone ’</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI`, `#Operating System`, `#Smartphone`, `#Intelligent Agent`
+**Tags**: `#AI chatbots`, `#political campaigns`, `#information integrity`, `#SEO`, `#content optimization`
 
 ---
