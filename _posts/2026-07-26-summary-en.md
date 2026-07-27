@@ -5,171 +5,253 @@ date: 2026-07-26
 lang: en
 ---
 
-> From 28 items, 7 important content pieces were selected
+> From 31 items, 11 important content pieces were selected
 
 ---
 
-1. [vLLM v0.26.0 adds Inkling model, boosts DeepSeek-V4](#item-1) ⭐️ 9.0/10
-2. [SGLang v0.5.16: DSpark Speculative Decoding and Inkling Support](#item-2) ⭐️ 9.0/10
-3. [Open-weight AI is having its Kubernetes moment](#item-3) ⭐️ 8.0/10
-4. [Grassroots movement disables Flock surveillance cameras](#item-4) ⭐️ 8.0/10
-5. [Ruff v0.16.0 Expands Default Rules from 59 to 413](#item-5) ⭐️ 8.0/10
-6. [Claude Opus 5 Shows Strong Prompt Injection Resistance](#item-6) ⭐️ 8.0/10
-7. [AMD&\#x27;s Strategy to Break Nvidia&\#x27;s CUDA Moat](#item-7) ⭐️ 8.0/10
+1. [GrapheneOS Shields Locked Devices from Data Extraction](#item-1) ⭐️ 8.0/10
+2. [EU Proposes Browser-Level Privacy to Kill Cookie Banners](#item-2) ⭐️ 8.0/10
+3. [Delegating details to AI may not be empowering](#item-3) ⭐️ 8.0/10
+4. [LLM Token Relay Market: Pooling APIs and Fraud](#item-4) ⭐️ 8.0/10
+5. [ARM64 Assembly Implementation of YOLO26n Inference from Scratch](#item-5) ⭐️ 8.0/10
+6. [Small 4B Open-Weight Models Reach o3-Level on Swedish Medical QA](#item-6) ⭐️ 8.0/10
+7. [LLMs Benchmarked on IMO 2026: Frontier Models Nearly Perfect](#item-7) ⭐️ 8.0/10
+8. [DeepSeek Pauses Funding Round After Founder&\#x27;s Leaked Remarks](#item-8) ⭐️ 8.0/10
+9. [CXMT IPO on Shanghai Stock Exchange could become highest market cap in A-shares](#item-9) ⭐️ 8.0/10
+10. [Claude share links indexed by search engines, exposing user privacy](#item-10) ⭐️ 8.0/10
+11. [SpaceX rejects Falcon 9 orders from 2028, bets on Starship](#item-11) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [vLLM v0.26.0 adds Inkling model, boosts DeepSeek-V4](https://github.com/vllm-project/vllm/releases/tag/v0.26.0) ⭐️ 9.0/10
+## [GrapheneOS Shields Locked Devices from Data Extraction](https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices) ⭐️ 8.0/10
 
-vLLM v0.26.0 introduces support for the Inkling model family, delivers performance improvements for DeepSeek-V4, and adds features like fp32 lm\_head via head\_dtype, flexible attention backends, and matured KV offloading. This release strengthens vLLM as a versatile inference engine for cutting-edge open-weight models like Inkling \(975B parameters\) and optimizes performance for widely-used DeepSeek models, benefiting both researchers and production deployments. Inkling support includes base modeling, piecewise CUDA graphs, Hopper FA4 relative attention, MTP=1 speculative decoding, LoRA, and NVFP4 quantization. DeepSeek-V4 gains a specialized routing kernel \(2.94% E2E TPOT improvement\) and fused\_topk\_bias \(1.5–2x kernel speedup\).
+GrapheneOS implements strong protections against data extraction from locked devices, including an auto-reboot feature that returns the device to Before First Unlock \(BFU\) mode after 18 hours of inactivity. This significantly enhances user privacy and security, especially for journalists, activists, and individuals at risk of device seizure, by ensuring encryption keys are inaccessible when the device is locked. The auto-reboot to BFU mode is complemented by PIN entropy analysis and other hardening measures, making GrapheneOS one of the most secure mobile operating systems available.
 
-github · khluu · Jul 25, 10:38
+hackernews · Cider9986 · Jul 26, 05:57 · [Discussion](https://news.ycombinator.com/item?id=49055169)
 
-**Background**: vLLM is a high-performance open-source library for LLM inference, supporting various models and hardware. The Inkling model is a 975B-parameter mixture-of-experts transformer with 41B active parameters, pretrained on 45 trillion tokens and supporting up to 1M context tokens. NVFP4 is a 4-bit floating-point quantization format that retains higher dynamic range than INT4.
+**Background**: Before First Unlock \(BFU\) is a state where a device has been powered off or rebooted and has not been unlocked since; in this state, all data remains encrypted and inaccessible. GrapheneOS is an open-source Android-based OS focused on security and privacy, with features like sandboxed Google services and attack surface reduction.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://thinkingmachines.ai/news/introducing-inkling/">Inkling: Our Open-Weights Model - Thinking Machines Lab</a></li>
-<li><a href="https://www.technology.org/2026/07/16/thinking-machines-inkling-open-weights-model/">Thinking Machines Releases Inkling, Its First Open-Weights Model, Trained From Scratch</a></li>
-<li><a href="https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/">Introducing NVFP4 for Efficient and Accurate Low-Precision Inference | NVIDIA Technical Blog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GrapheneOS">GrapheneOS</a></li>
+<li><a href="https://blogs.dsu.edu/digforce/2023/08/23/bfu-and-afu-lock-states/">BFU and AFU Lock States – Blog | DigForCE Lab - DSU</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#vLLM`, `#LLM inference`, `#release`, `#DeepSeek`, `#performance`
+**Discussion**: Commenters noted that these features rival Apple&\#x27;s offerings, with some praising GrapheneOS for providing strong protection even without a duress password. Others discussed the entropy of different lock methods and the need for a complete backup solution to allow safe device wiping before border crossings.
+
+**Tags**: `#security`, `#mobile`, `#grapheneos`, `#privacy`, `#android`
 
 ---
 
 <a id="item-2"></a>
-## [SGLang v0.5.16: DSpark Speculative Decoding and Inkling Support](https://github.com/sgl-project/sglang/releases/tag/v0.5.16) ⭐️ 9.0/10
+## [EU Proposes Browser-Level Privacy to Kill Cookie Banners](https://killthecookiebanner.eu/) ⭐️ 8.0/10
 
-SGLang v0.5.16 introduces DSpark speculative decoding, achieving 383.7 tok/s on DeepSeek-V4-Pro, and adds support for the 975B-parameter Inkling multimodal MoE model. The release includes 574 pull requests from 169 contributors, marking a major update. This release significantly boosts LLM inference performance with adaptive speculative decoding, and extends SGLang&\#x27;s support to cutting-edge multimodal MoE models, benefiting both researchers and production deployments. DSpark uses semi-autoregressive drafting and confidence-based verification, reaching up to 383.7 tok/s with an accept length of ~5 on Blackwell B300 TP8. Inkling combines sliding-window, full, and Mamba2 linear attention with NVFP4 MoE and native MTP, achieving up to 71.7k tok/s input and 171.0 tok/s per-user decode.
+The European Commission has proposed a new regulation that would allow users to set their privacy preferences directly in their web browser, eliminating the need for repetitive cookie consent banners on every website. This could dramatically improve user experience by reducing intrusive pop-ups and could set a global standard for privacy consent that simplifies compliance for websites. The proposal still requires formal adoption by EU institutions. It builds on existing browser settings like those in Chrome and Edge but aims to make them legally binding for consent under GDPR.
 
-github · Qiaolin-Yu · Jul 25, 00:13
+hackernews · rapnie · Jul 26, 11:53 · [Discussion](https://news.ycombinator.com/item?id=49057175)
 
-**Background**: Speculative decoding is a technique that uses a smaller draft model to generate multiple tokens, then verifies them with the larger target model, achieving speedup without quality loss. SGLang is an open-source serving framework for large language models, optimized for fast inference. DSpark, originally released by DeepSeek, reduces inference latency by up to 85% by scheduling verification based on confidence.
+**Background**: Cookie banners are a result of the EU&\#x27;s ePrivacy Directive and GDPR, which require websites to obtain user consent before placing non-essential cookies. However, many users find these banners annoying and often click without reading. The proposed solution would let users set a global preference in the browser, which websites would then respect.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.techtimes.com/articles/319236/20260628/deepseek-releases-dspark-speculative-decoding-makes-v4-85-percent-faster.htm">DeepSeek Releases DSpark: Speculative Decoding Makes V4 Up to 85 Percent Faster</a></li>
-<li><a href="https://thinkingmachines.ai/news/introducing-inkling/">Inkling: Our Open-Weights Model - Thinking Machines Lab</a></li>
-<li><a href="https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort/">Thinking Machines Lab Releases Inkling: A 975B-Parameter Open ...</a></li>
+<li><a href="https://support.microsoft.com/en-us/edge/adjust-privacy-settings-in-microsoft-edge">Adjust privacy settings in Microsoft Edge</a></li>
+<li><a href="https://secureprivacy.ai/blog/cookie-consent-automation">Cookie Consent Automation: A Complete Guide for Businesses | Secure Privacy Blog</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#speculative decoding`, `#LLM serving`, `#SGLang`, `#multimodal MoE`, `#high performance`
+**Discussion**: Commenters express mixed feelings: some support the idea but suggest making all non-essential cookies illegal, while others note that a similar approach is already being implemented in California. A few point out that the real solution is to stop tracking altogether.
+
+**Tags**: `#privacy`, `#cookie banners`, `#EU regulation`, `#web standards`, `#user experience`
 
 ---
 
 <a id="item-3"></a>
-## [Open-weight AI is having its Kubernetes moment](https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/) ⭐️ 8.0/10
+## [Delegating details to AI may not be empowering](https://davidnicholaswilliams.com/its-not-empowering-to-hand-off-the-details/) ⭐️ 8.0/10
 
-An article argues that open-weight AI models are becoming the standard infrastructure layer, similar to how Kubernetes became the standard for container orchestration in cloud computing. This analogy suggests open-weight models could become indispensable infrastructure, reshaping competition, regulation, and startup viability, with implications for how American labs need to compete against Chinese models. Open-weight models release the trained parameters \(weights\) but not necessarily the training data or full source code, enabling anyone to host, fine-tune, or build on them while lacking full open-source transparency.
+David Nicholas Williams argues that handing off details to AI reduces personal understanding and control, challenging the notion that delegation is empowering. This debate highlights a critical tension in AI-assisted development: the trade-off between efficiency gains and the loss of deep knowledge, affecting developer skill growth and code quality. The author focuses on the act of delegating details—not just tasks—and argues it leads to superficial understanding, while commenters note that verification can occur without full comprehension.
 
-hackernews · tknaup · Jul 25, 14:49 · [Discussion](https://news.ycombinator.com/item?id=49048034)
+hackernews · davnicwil · Jul 26, 17:58 · [Discussion](https://news.ycombinator.com/item?id=49060592)
 
-**Background**: Kubernetes is an open-source system that automates deployment, scaling, and management of containerized applications, becoming the de facto standard cloud infrastructure layer. Similarly, open-weight AI models release the learned weights of a neural network, allowing users to run inference or fine-tune the model, but they differ from fully open-source AI \(which also includes training data and code\). The article draws a parallel between the two as standardized, widely adopted infrastructure that enables innovation on top.
+**Background**: Vibecoding is a term for loosely directing AI to generate code without deep involvement. The article taps into ongoing discussions about how much developers should rely on AI versus maintain hands-on expertise.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.linkedin.com/pulse/open-weight-ai-what-we-finally-opened-bonnet-nicolas-pistorio-n3ulf">Open - weight AI : what if we finally opened the bonnet ?</a></li>
-<li><a href="https://openai.com/index/introducing-gpt-oss/">Introducing gpt-oss | OpenAI</a></li>
+**Discussion**: Commenters are divided: some agree that delegating details reduces empowerment \(e.g., RGS1811’s fatigue with AI output\), while others find it liberating \(e.g., chungusamongus using AI for game development\). The dialogue emphasizes the need for judgement over which details to keep or hand off.
 
-</ul>
-</details>
-
-**Discussion**: Community comments highlight several key points: some argue that banning models by country of origin is technically infeasible since weights are just numbers \(ozgung\); others find &\#x27;tokenomics&\#x27; pricing confusing \(firasd\); there is support for a collaborative, Linux-like AI model built by many companies \(pianopatrick\); and some note that OpenAI has released older open-weight models but rarely updates them \(drnick1\). Overall sentiment is positive about the analogy but concerned about practical and regulatory challenges.
-
-**Tags**: `#open-weight models`, `#AI infrastructure`, `#Kubernetes`, `#open source AI`, `#AI regulation`
+**Tags**: `#AI-assisted coding`, `#developer productivity`, `#software engineering`, `#knowledge work`, `#delegation`
 
 ---
 
 <a id="item-4"></a>
-## [Grassroots movement disables Flock surveillance cameras](https://www.theguardian.com/us-news/ng-interactive/2026/jul/25/flock-surveillance-cameras) ⭐️ 8.0/10
+## [LLM Token Relay Market: Pooling APIs and Fraud](https://simonwillison.net/2026/Jul/26/relay-market/#atom-everything) ⭐️ 8.0/10
 
-A Guardian article reports that citizens are increasingly disabling Flock surveillance cameras through direct action, citing privacy violations and distrust in authorities. 这种草根反抗凸显了公众对无处不在的监控技术日益增长的抵制，并引发了关于公共安全与公民自由平衡的质疑。 Flock cameras are license plate readers used by law enforcement, but a 2021 study found a 10% error rate in their output. The disabling movement includes acts like using pool skimmers with cardboard to block cameras.
+An investigation by Matt Lenhard reveals a market where resellers offer discounted LLM tokens by pooling API keys from various sources, including abusing free trials and using stolen credit cards, primarily operating in China using open-source proxy tools like one-api and new-api. This highlights a significant security and fraud issue in the LLM ecosystem, where abusers can profit from unprotected endpoints, leading to large token bills for legitimate API users and vendors. It underscores the need for better API key caps and monitoring from LLM providers. The proxy software used, one-api and its fork new-api, are legitimate open-source API proxy products designed for load balancing across multiple API credentials. Buyers seek cheap tokens, avoid geo-restrictions, or collect data for model distillation.
 
-hackernews · bookofjoe · Jul 25, 19:02 · [Discussion](https://news.ycombinator.com/item?id=49050538)
+rss · Simon Willison · Jul 26, 19:30
 
-**Background**: Flock Safety is a company that sells automated license plate recognition cameras to police departments and private entities. The cameras are mounted in public spaces to record every passing vehicle, which has raised significant privacy concerns. Critics argue that such surveillance can be misused and erode public trust.
+**Background**: LLM tokens are units used by language models to process text, and API keys grant access to these models on a pay-per-token basis. Resellers create proxy services that pool many API keys, often obtained through illicit means, to offer discounted rates. The open-source tools one-api and new-api allow users to set up such proxies easily, but they can be misused for fraudulent activities.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Flock_Safety">Flock Safety - Wikipedia</a></li>
-<li><a href="https://trafficvision.live/blog/flock-cameras">Flock Cameras : What They Are &amp; Can You Watch... | TrafficVision.Live</a></li>
+<li><a href="https://github.com/songquanpeng/one-api/blob/main/README.en.md">one-api/README.en.md at main · songquanpeng/one-api</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments express strong support for the grassroots actions, with some noting that extreme criminality at high political levels undermines the stated purpose of the cameras. Others suggest counter-measures like pointing cameras at politicians&\#x27; homes. The sentiment is that when people feel unheard, vigilantism is inevitable.
-
-**Tags**: `#surveillance`, `#privacy`, `#civil liberties`, `#vigilantism`, `#technology`
+**Tags**: `#LLM`, `#security`, `#fraud`, `#API`, `#AI`
 
 ---
 
 <a id="item-5"></a>
-## [Ruff v0.16.0 Expands Default Rules from 59 to 413](https://simonwillison.net/2026/Jul/25/ruff/#atom-everything) ⭐️ 8.0/10
+## [ARM64 Assembly Implementation of YOLO26n Inference from Scratch](https://www.reddit.com/r/MachineLearning/comments/1v6w394/i_implemented_the_yolo26n_model_inference_from/) ⭐️ 8.0/10
 
-Astral released Ruff v0.16.0 on July 23rd, which increases the default lint rule set from 59 to 413 rules, enabling many previously opt-in checks by default. This change will affect virtually all Ruff users and CI pipelines, as existing projects may suddenly see hundreds of new warnings or errors. Developers with unpinned dependencies may experience broken CI builds until they update their code or pin the old Ruff version. The default rule set had not been updated since Ruff v0.1.0, despite the total number of available rules growing from 708 to 968. The release includes &\#x27;unsafe-fixes&\#x27; for automated resolution, and the author of the news post successfully applied automatic fixes to three major projects, fixing up to 1,538 errors per project.
+A bachelor&\#x27;s thesis project implemented YOLO26n object detection inference entirely from scratch using ARM64 assembly language and C, without relying on any existing deep learning frameworks. The implementation incorporates advanced optimizations such as NEON SIMD, Winograd convolution, cache-aware tiling, and custom ARM64 micro-kernels. This project demonstrates a deep understanding of low-level systems programming and neural network optimization, which is crucial for deploying efficient AI on edge devices like the Raspberry Pi. It shows that even without massive frameworks, one can achieve functional inference with careful manual optimization, pushing the boundaries of edge AI performance. The implementation includes custom binary format for model parameters, operator fusion, attention mechanisms, and all YOLO26n components \(Conv, C3K2, SPPF, C2PSA, PSA, BottleNeck, Detect\). Performance improvement was lower than expected, indicating the complexity of optimizing for ARM NEON and memory hierarchy.
 
-rss · Simon Willison · Jul 25, 22:44
+reddit · r/MachineLearning · /u/Forward\_Confusion902 · Jul 26, 06:43
 
-**Background**: Ruff is an extremely fast Python linter and code formatter written in Rust, designed as a drop-in replacement for tools like Flake8, isort, and pyupgrade. It re-implements over 900 lint rules from dozens of existing tools and runs 10-100x faster than its predecessors. The default rule set previously only enabled a small subset \(59 rules\) to minimize false positives for new users, but this release flips many more rules on by default to catch more issues early.
+**Background**: YOLO \(You Only Look Once\) is a popular family of real-time object detection models, with YOLO26n being the latest nano version optimized for edge devices. Winograd convolution is a fast algorithm that reduces the number of multiplications in convolutional layers, and NEON SIMD \(Single Instruction Multiple Data\) allows parallel processing on ARM processors. C2PSA is a dual-branch attention module used in YOLO26n to enhance feature extraction for small objects.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://docs.astral.sh/ruff/linter/">The Ruff Linter | Ruff - Astral</a></li>
-<li><a href="https://github.com/astral-sh/ruff">GitHub - astral-sh/ruff: An extremely fast Python linter and ... ruff · PyPI Ruff - Astral Ruff: Complete Guide to Python&#x27;s Fastest Linter | pydevtools GitHub - sartcod/ruff: An extremely fast Python linter and ... Ruff: A Modern Python Linter for Error-Free and Maintainable ...</a></li>
+<li><a href="https://platform.ultralytics.com/ultralytics/yolo26">YOLO 26 Models by Ultralytics</a></li>
+<li><a href="https://arxiv.org/abs/2201.10369">[2201.10369] Winograd Convolution for Deep Neural Networks: Efficient ...</a></li>
+<li><a href="https://www.emergentmind.com/topics/c2psa-module">C2PSA Module: Dual-Branch Attention</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Python`, `#linting`, `#Ruff`, `#tooling`
+**Tags**: `#ARM64`, `#YOLO`, `#Edge AI`, `#Optimization`, `#Assembly`
 
 ---
 
 <a id="item-6"></a>
-## [Claude Opus 5 Shows Strong Prompt Injection Resistance](https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything) ⭐️ 8.0/10
+## [Small 4B Open-Weight Models Reach o3-Level on Swedish Medical QA](https://www.reddit.com/r/MachineLearning/comments/1v71wds/openweight_4b_models_approach_o3level_medical/) ⭐️ 8.0/10
 
-Boris Cherny highlighted that Anthropic&\#x27;s Claude Opus 5 model is the least prompt injectable model yet, as detailed in its system card. This marks a significant safety improvement for large language models, addressing a critical vulnerability that can bypass model safeguards. Enhanced prompt injection resistance is vital for deploying AI in sensitive applications. The claim is based on prompt injection evaluations and red teaming, with details buried on page 73 of the Claude Opus 5 System Card. The model appears very hard to prompt inject successfully.
+The post demonstrates that open-weight 4B models, specifically Qwen3.5-4B with reasoning enabled, achieve 87% accuracy on the MedQA-SWE Swedish medical licensing exam dataset, approaching the 88% score of OpenAI&\#x27;s o3 model. The author used supervised fine-tuning \(SFT\) on earlier exam years and an early-exit thinking intervention to prevent reasoning loops. This result shows that small open-weight models can rival much larger proprietary systems on domain-specific medical QA, lowering the barrier for clinical AI in low-resource languages. It highlights the effectiveness of post-training techniques like SFT and reasoning intervention for improving small model performance. The best result \(87%\) was achieved by Qwen3.5-4B with reasoning and an early-exit intervention that caps the thinking trace length, preventing repetitive loops. Without any post-training, Qwen3.5-4B already scores 77%, while older MedGemma-1.5-4B reached only 60% after SFT.
 
-rss · Simon Willison · Jul 25, 00:42
+reddit · r/MachineLearning · /u/AccomplishedCat4770 · Jul 26, 11:58
 
-**Background**: Prompt injection is a cybersecurity exploit where malicious inputs cause LLMs to ignore developer instructions or perform unintended actions. It can be direct or indirect, e.g., via web content. Red teaming involves adversarial testing to uncover vulnerabilities. These evaluations are crucial for AI safety.
+**Background**: MedQA-SWE is a multiple-choice clinical question-answering dataset in Swedish, comprising 3,180 questions from exams for foreign doctors. The early-exit intervention is inspired by the S-GRPO reinforcement learning paper, which injects a phrase to close the thinking trace at a predetermined length. Small language models \(4B parameters\) are often used for efficient deployment due to lower compute requirements.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Red_teaming">Red teaming</a></li>
-<li><a href="https://owasp.org/www-community/attacks/PromptInjection">Prompt Injection - OWASP Foundation</a></li>
+<li><a href="https://huggingface.co/datasets/nicher92/medqa-swe">nicher92/medqa-swe · Datasets at Hugging Face</a></li>
+<li><a href="https://aclanthology.org/2024.lrec-main.975/">MedQA-SWE - a Clinical Question &amp; Answer Dataset for Swedish</a></li>
+<li><a href="https://arxiv.org/pdf/2505.07686">S - GRPO : Early Exit via Reinforcement Learning in Reasoning Models</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#prompt-injection`, `#anthropic`, `#claude`, `#ai-safety`, `#generative-ai`
+**Tags**: `#LLM`, `#medical QA`, `#reasoning`, `#open-weight models`, `#Swedish`
 
 ---
 
 <a id="item-7"></a>
-## [AMD&\#x27;s Strategy to Break Nvidia&\#x27;s CUDA Moat](https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing) ⭐️ 8.0/10
+## [LLMs Benchmarked on IMO 2026: Frontier Models Nearly Perfect](https://www.reddit.com/r/MachineLearning/comments/1v6wskz/we_compared_different_llms_on_imo_2026_r/) ⭐️ 8.0/10
 
-A detailed analysis from SemiAnalysis reveals AMD&\#x27;s multifaceted approach to challenge Nvidia&\#x27;s CUDA dominance, including agentic kernel generation, software quality improvements, aggressive pricing with up to 105% discounts, and the Helios MI455X rack-scale system facing production ramp challenges. If successful, AMD&\#x27;s efforts could erode Nvidia&\#x27;s near-monopoly in AI training and inference, potentially lowering costs and increasing hardware options for AI developers. The analysis highlights both technical and financial tactics that could shift the competitive landscape. AMD&\#x27;s agentic kernel generation \(e.g., GEAK\) aims to automate kernel optimization, addressing a key weakness in software quality. However, internal development clusters remain unstable, and the Helios MI455X production ramp is described as &\#x27;hell,&\#x27; while finance engineering offers up to 105% equity rebate discounts to attract customers like OpenAI.
+A team of former IMO medalists evaluated multiple LLMs on the novel IMO 2026 problems, finding that frontier models &\#x27;sol&\#x27; and &\#x27;fable&\#x27; achieved nearly perfect scores, while their custom multi-agent harness AutoFyn significantly boosted performance of other models like Claude Sonnet and open-weight GLM. This comparison demonstrates that even on novel, high-difficulty math reasoning tasks, frontier models are approaching human expert-level performance, while orchestration harnesses can substantially bridge the gap for weaker models, highlighting the importance of engineering alongside model scale. Grading combined automated evaluation by a frontier model and manual verification by former IMO medalists; the hardest problem \(P3\) eluded all sub-frontier models regardless of harness, and hallucination issues still appeared in verifiable math domains.
 
-rss · Semianalysis · Jul 25, 00:33
+reddit · r/MachineLearning · /u/pequalnp92 · Jul 26, 07:21
 
-**Background**: Nvidia&\#x27;s CUDA ecosystem has long been a formidable barrier to entry for competitors, as many AI frameworks and optimized libraries are built specifically for CUDA. AMD&\#x27;s ROCm software stack aims to provide compatibility and performance, but historically has lagged in quality and developer adoption. Agentic kernel generation uses AI to automatically create optimized GPU kernels, potentially reducing the manual effort required to match Nvidia&\#x27;s performance.
+**Background**: International Mathematical Olympiad \(IMO\) problems are designed for high school students but require deep reasoning and are rarely seen in training data, making them a rigorous benchmark for LLM reasoning ability. An orchestration harness like AutoFyn coordinates multiple LLM calls, retrieval, and verification steps to improve performance on complex multi-step tasks, beyond what a single model call can achieve.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://newsletter.semianalysis.com/p/can-amd-break-the-cuda-moat-amd-advancing">Can AMD break the CUDA Moat? AMD Advancing AI 2026</a></li>
-<li><a href="https://www.tomshardware.com/pc-components/gpus/amd-takes-the-wraps-off-its-instinct-mi455x-ai-accelerator-cdna-5-and-helios-rack-scale-architecture-combine-to-take-the-fight-to-nvidia-in-the-data-center">AMD takes the wraps off its Instinct MI455X AI accelerator — CDNA 5 and Helios rack-scale architecture combine to take the fight to Nvidia in the data center | Tom&#x27;s Hardware</a></li>
-<li><a href="https://www.amd.com/en/products/rackscale-solutions/helios.html">AMD Helios Rackscale Solution – Powering Frontier AI</a></li>
+<li><a href="https://opace.agency/blog/gpt-5-6-sol-vs-fable-5-expensive-llms/">GPT-5.6 Sol vs Fable 5 | Do More Expensive LLMs Provide Better Results?</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AMD`, `#CUDA`, `#GPU Computing`, `#AI Hardware`, `#Software Ecosystem`
+**Tags**: `#LLM`, `#benchmark`, `#reasoning`, `#math`, `#evaluation`
+
+---
+
+<a id="item-8"></a>
+## [DeepSeek Pauses Funding Round After Founder&\#x27;s Leaked Remarks](https://www.bloomberg.com/news/articles/2026-07-25/deepseek-said-to-tell-backers-of-funding-pause-after-viral-posts) ⭐️ 8.0/10
+
+DeepSeek has paused a new funding round due to founder Liang Wenfeng&\#x27;s dissatisfaction with leaked internal remarks. The company is also preparing for an IPO, which could be filed as early as 2026. This pause signals potential internal governance challenges at a major Chinese AI startup, and may affect its near-term capital raising and IPO timeline. It also highlights the sensitivity of communications in the competitive AI industry. The funding round was expected to raise at least 10 billion yuan at a pre-money valuation of no less than 480 billion yuan. DeepSeek raised $7 billion in its first round in June 2026, including investors like Tencent, CATL, and a national AI investment fund.
+
+telegram · zaihuapd · Jul 26, 01:17
+
+**Background**: DeepSeek is a Chinese AI company based in Hangzhou, focused on developing large language models. Its DeepSeek-V3 model uses a Mixture-of-Experts architecture with 671 billion total parameters. The company is owned by hedge fund High-Flyer, and its models are known for strong reasoning and efficient inference.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/DeepSeek">DeepSeek - Wikipedia</a></li>
+<li><a href="https://www.deepseek.com/en/">DeepSeek</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#DeepSeek`, `#funding`, `#business`, `#IPO`
+
+---
+
+<a id="item-9"></a>
+## [CXMT IPO on Shanghai Stock Exchange could become highest market cap in A-shares](https://www.bloomberg.com/news/articles/2026-07-26/memory-frenzy-primes-china-champion-cxmt-for-historic-debut?srnd=phx-technology) ⭐️ 8.0/10
+
+CXMT, China&\#x27;s largest DRAM manufacturer, will debut on the Shanghai Stock Exchange after raising 66.6 billion yuan \($9.8 billion\) in the biggest A-share IPO since 2010. This IPO signals China&\#x27;s push for semiconductor self-sufficiency and could make CXMT the most valuable A-share company, impacting the global DRAM market and semiconductor industry. The IPO priced at 8.66 yuan per share, with an initial market cap of about 580 billion yuan. Retail tranche was oversubscribed 212 times, with 9.4 million orders freezing approximately 7.07 trillion yuan.
+
+telegram · zaihuapd · Jul 26, 07:31
+
+**Background**: DRAM \(Dynamic Random Access Memory\) is a type of volatile memory used in computers and devices. CXMT operates as an IDM \(Integrated Device Manufacturer\), meaning it designs and manufactures its own chips. The company is China&\#x27;s most advanced DRAM producer and a key player in the country&\#x27;s semiconductor self-sufficiency goals.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Random-access_memory">Random - access memory - Wikipedia</a></li>
+<li><a href="https://www.techtarget.com/searchstorage/definition/DRAM">What is DRAM ( Dynamic Random Access Memory )? How Does it...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#DRAM`, `#Semiconductor`, `#IPO`, `#CXMT`, `#A-shares`
+
+---
+
+<a id="item-10"></a>
+## [Claude share links indexed by search engines, exposing user privacy](https://search.brave.com/search?q=site%3Aclaude.ai%2Fshare&amp;amp;source=android) ⭐️ 8.0/10
+
+A privacy vulnerability in Anthropic&\#x27;s Claude AI assistant allows publicly shared conversation links to be indexed by search engines like Google, exposing sensitive user data such as API keys, cryptocurrency wallet details, and personal information. Unlike ChatGPT, which fixed a similar issue a year ago, Anthropic has not yet addressed this flaw. This vulnerability compromises user privacy on a large scale, as anyone can access private conversations by searching indexed links. It undermines trust in AI assistants that handle sensitive information and highlights the need for default privacy safeguards in AI products. Exposed data includes API keys, cryptocurrency wallets, resumes, legal consultations, internal company projects, and Social Security numbers. Google has blocked indexing of these links, but Brave and Bing still index them. Anthropic recommends manually deleting shared conversations via settings.
+
+telegram · zaihuapd · Jul 26, 11:16
+
+**Background**: Claude is an AI assistant developed by Anthropic, designed for safe and accurate interactions. The &\#x27;share&\#x27; feature allows users to create public links to conversations. However, these links lack a &\#x27;noindex&\#x27; robots meta tag, which instructs search engines not to index a page. Without this tag, search engines automatically index the links, making them publicly discoverable.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://claude.com/">Claude</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Noindex">noindex - Wikipedia</a></li>
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing">Block Search Indexing with noindex | Google Search Central</a></li>
+
+</ul>
+</details>
+
+**Discussion**: The community discussion highlights the severity of the issue, with many users expressing concern over the exposure of highly sensitive data. A notable comment from Om Patel \(@om\_patel5\) notes that while Google has blocked indexing, Brave and Bing still index the links.
+
+**Tags**: `#privacy`, `#security`, `#Claude`, `#AI`, `#vulnerability`
+
+---
+
+<a id="item-11"></a>
+## [SpaceX rejects Falcon 9 orders from 2028, bets on Starship](https://www.bloomberg.com/news/articles/2026-07-23/spacex-is-turning-away-falcon-customers-in-major-bet-on-starship) ⭐️ 8.0/10
+
+SpaceX has begun rejecting sole-use Falcon 9 launch requests from satellite operators for missions beyond 2028 and is no longer accepting future reservations for its Falcon 9 rideshare program, while scaling back production of non-reusable Falcon parts to accelerate transition to Starship. This strategic shift could reshape the commercial launch market, as many satellite operators rely on Falcon 9 for affordable access to orbit; if Starship fails to achieve operational readiness by 2028, a significant launch capacity gap may emerge. SpaceX may still retain Falcon 9 missions for the U.S. Department of Defense and NASA, but its stock has dropped about 25% since its June 2026 IPO due to Starship delays; as of July 2026, Starship has launched 13 times with 8 successes and 5 failures.
+
+telegram · zaihuapd · Jul 26, 12:42
+
+**Background**: Starship is a two-stage fully reusable super heavy-lift launch vehicle under development by SpaceX, intended to succeed Falcon 9 and Falcon Heavy. It is powered by Raptor engines burning liquid methane and liquid oxygen, and aims to reduce launch costs through reuse. The Falcon 9 has been SpaceX&\#x27;s workhorse, offering dedicated and rideshare launches for commercial and government customers. SpaceX&\#x27;s transition to Starship involves phasing out Falcon 9 production, but Starship has not yet entered commercial service.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Starship_rocket">Starship rocket</a></li>
+<li><a href="https://www.spacex.com/rideshare">Smallsat Rideshare Program - SpaceX</a></li>
+<li><a href="https://rideshare.spacex.com/">SpaceX Satellite Rideshare</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#SpaceX`, `#Starship`, `#Falcon 9`, `#space launch`, `#commercial space`
 
 ---
