@@ -5,175 +5,210 @@ date: 2026-08-01
 lang: en
 ---
 
-> From 36 items, 7 important content pieces were selected
+> From 38 items, 9 important content pieces were selected
 
 ---
 
-1. [DeepSeek V4 Flash 0731 Launches: Frontier-Level AI at Ultra-Low Price](#item-1) ⭐️ 9.0/10
-2. [Huawei Open-Sources 505B-Parameter MoE Model openPangu-2.0-Pro](#item-2) ⭐️ 9.0/10
-3. [Elevator Scheduling Algorithms: A Simulation-Based Analysis](#item-3) ⭐️ 8.0/10
-4. [YC-Backed qm Launches Multiplayer Agent Harness for Work](#item-4) ⭐️ 8.0/10
-5. [Stateless MCP 2.0 Reignites Interest, Inspires mcp-explorer and datasette-mcp](#item-5) ⭐️ 8.0/10
-6. [Simon Willison Joins Oxide and Friends to Discuss Open-Weight AI Revolution](#item-6) ⭐️ 8.0/10
-7. [German Court Rules AI Music Firm Suno Violated Copyright](#item-7) ⭐️ 8.0/10
+1. [OpenAI&\#x27;s Astra Model Achieves Breakthroughs on Ten Math Problems](#item-1) ⭐️ 9.0/10
+2. [How Google Helped Destroy Adoption of RSS Feeds](#item-2) ⭐️ 8.0/10
+3. [NetBSD 11.0 Released with NPF Improvements and Fast-Booting MICROVM Kernel](#item-3) ⭐️ 8.0/10
+4. [DeepSeek V4-Flash-0731: 304B-Parameter Model, Strong Agentic Skills, Low Cost](#item-4) ⭐️ 8.0/10
+5. [How Symmetric Are the Insides of a Go Network?](#item-5) ⭐️ 8.0/10
+6. [VLMs Score Well on Benchmarks While Silently Erasing Clinical Terms](#item-6) ⭐️ 8.0/10
+7. [Major Labels Propose Barring AI Songs from Music Charts](#item-7) ⭐️ 8.0/10
+8. [Microsoft Confirms Copilot &\#x27;Super App&\#x27; Launch This Year](#item-8) ⭐️ 8.0/10
+9. [ChangXin Memory&\#x27;s LPDDR6 Nears Validation, Reaching 12800 Mbps](#item-9) ⭐️ 8.0/10
 
 ---
 
 <a id="item-1"></a>
-## [DeepSeek V4 Flash 0731 Launches: Frontier-Level AI at Ultra-Low Price](https://artificialanalysis.ai/models/deepseek-v4-flash) ⭐️ 9.0/10
+## [OpenAI&\#x27;s Astra Model Achieves Breakthroughs on Ten Math Problems](https://openai.com/index/ten-advances-in-mathematics/) ⭐️ 9.0/10
 
-DeepSeek officially released V4 Flash 0731, the successor to its V4 Flash preview, scoring 50 on the Artificial Analysis Intelligence Index — 10 points higher than the previous version. Agentic performance jumped as well, with an Elo of 1559 on GDPval-AA v2, up from 1189. The release shows that an efficiency-optimized, low-cost model can now sit at the frontier of AI intelligence, challenging the economics of larger proprietary systems. With API pricing at just $0.14 per million input tokens and $0.28 per million output tokens, DeepSeek makes advanced agentic AI affordable for a much wider range of developers and applications. V4 Flash 0731 is a sparse mixture-of-experts model with 284B total parameters, 13B activated per token, and a 1M-token context window. It keeps the same architecture as the preview and only revises post-training, while natively supporting the Responses API format and including targeted adaptation for OpenAI&\#x27;s Codex.
+OpenAI announced that an internal version of its next model, Astra, produced new results on ten long-standing open problems in mathematics and theoretical computer science, including high-dimensional sphere packing, non-sofic group existence, and a counterexample to Connes&\#x27; rigidity conjecture. The AI-generated arguments were formalized in the Lean proof assistant, with humans helping to write up and verify the results. This marks a potential paradigm shift in AI-assisted mathematical research: for the first time, an AI model has reportedly made major progress on problems that resisted human mathematicians for decades, with formal verification lending credibility. It could reshape how mathematicians work, moving toward Terence Tao&\#x27;s vision of &\#x27;big mathematics&\#x27; with large-scale human-AI collaboration. OpenAI says each problem cost less than $2,000 in token costs at GPT-5.6 Sol pricing, but did not disclose how many problems were attempted without success. The openai/ten-proofs repository contains Lean 4 formalizations, accompanied by a paper and an LLM-generated PDF that reconstructs the reasoning traces.
 
-hackernews · theanonymousone · Jul 31, 07:59 · [Discussion](https://news.ycombinator.com/item?id=49120299)
+telegram · zaihuapd · Aug 1, 07:59
 
-**Background**: DeepSeek is a Chinese AI lab that openly releases model weights, and its V4 series uses a Mixture-of-Experts design in which only a fraction of parameters are active per token, cutting inference cost while keeping capability high. The Artificial Analysis Intelligence Index aggregates public and private evaluations to rank models, and a score of 50 places V4 Flash 0731 on the frontier alongside systems that are far more expensive to run.
+**Background**: Lean is an open-source proof assistant and functional programming language, based on the calculus of inductive constructions, that lets mathematicians write proofs verified by a computer. Formalizing a theorem in Lean ensures its correctness beyond human review, which is why the project&\#x27;s use of Lean adds strong evidence for the results. The problems tackled—such as sphere packing, sofic groups, and Ramsey numbers—are central open questions in mathematics and computer science, many of which have seen no progress for decades.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://artificialanalysis.ai/articles/deepseek-v4-flash-0731-scores-50-on-the-artificial-analysis-intelligence-index-10-points-above-previous-deepseek-v4-flash">DeepSeek V4 Flash 0731 scores 50 on the Artificial Analysis Intelligence Index, 10 points above previous DeepSeek V4 Flash</a></li>
-<li><a href="https://openrouter.ai/deepseek/deepseek-v4-flash-0731">DeepSeek V4 Flash 0731 - API Pricing &amp; Benchmarks | OpenRouter</a></li>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731">deepseek-ai/DeepSeek-V4-Flash-0731 · Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lean_%28proof_assistant%29">Lean (proof assistant) - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sofic_group">Sofic group</a></li>
+<li><a href="https://math.ucsd.edu/seminar/connes-rigidity-conjecture">On Connes&#x27; rigidity conjecture | Department of Mathematics</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Comments are largely enthusiastic, celebrating frontier-level intelligence at an extremely low price and noting that the model works well as a daily coding driver. Some users wonder whether an upcoming V4 Pro could surpass it, while others debate the sustainability of large-scale open model hosting and approximate cost comparisons with other frontier models.
+**Discussion**: The announcement drew comparisons to Deep Blue&\#x27;s chess victory, with many mathematicians experiencing a mix of awe and existential unease—essayist Kirwin Hampshire called it &\#x27;a profound spiritual crisis.&\#x27; Commenters also noted missing transparency details, such as the prompts used and the number of failed attempts, while citing Terence Tao&\#x27;s optimistic vision of &\#x27;big mathematics&\#x27; as a hopeful frame for the shift.
 
-**Tags**: `#AI`, `#DeepSeek`, `#LLM`, `#model release`, `#cost analysis`
+**Tags**: `#AI research`, `#mathematics`, `#OpenAI`, `#formal verification`, `#theorem proving`
 
 ---
 
 <a id="item-2"></a>
-## [Huawei Open-Sources 505B-Parameter MoE Model openPangu-2.0-Pro](https://huggingface.co/openpangu/openPangu-2.0-Pro) ⭐️ 9.0/10
+## [How Google Helped Destroy Adoption of RSS Feeds](https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds) ⭐️ 8.0/10
 
-Huawei has open-sourced openPangu-2.0-Pro on Hugging Face, a Mixture-of-Experts LLM with about 505B total parameters and about 18B active per token, supporting a 512k context window. The Thinking variant scores 95.4 on AIME 2026 and 87.9 on GPQA-Diamond. This is one of the largest open-source MoE releases from Huawei, trained on Ascend NPUs, demonstrating a viable non-NVIDIA AI stack. It could strengthen the open-weight LLM ecosystem and provide researchers with an advanced long-context reasoning model. The architecture uses Multi-head Latent Attention \(MLA\), a hybrid DSA+SWA layered attention design, and a 3-head Multi-Token Prediction \(MTP\) module for self-speculative decoding. Training used roughly 34T tokens, with post-training combining fast/slow integrated fine-tuning and multi-task reinforcement learning.
+A 2023 blog post argues that Google&\#x27;s actions—particularly shutting down Google Reader in 2013 and aggressively promoting Google+—played a major role in the decline of RSS feeds and the open web. It presents a historically grounded analysis of Google&\#x27;s impact on web syndication. The analysis matters because it shows how decisions by a dominant tech company can unintentionally undermine open standards and reshape the internet ecosystem. It resonates with ongoing concerns about walled gardens, content centralization, and the health of the open web. Google Reader launched in 2005 and was closed on July 1, 2013, with Google citing declining usage—a claim many users disputed given the simultaneous push for Google+. The post also reportedly examines related moves by other companies, such as Mozilla removing RSS features from Firefox, though Google remains the main focus.
 
-telegram · zaihuapd · Jul 31, 06:50
+hackernews · pudgywalsh · Aug 1, 18:07 · [Discussion](https://news.ycombinator.com/item?id=49136821)
 
-**Background**: OpenPangu-2.0-Pro is a Mixture-of-Experts \(MoE\) model, where a large set of parameters is split into experts and only a subset is activated per token, balancing quality and inference cost. MLA compresses key-value cache to reduce memory overhead, while DSA+SWA hybrid attention mixes sliding-window and content-selected attention for efficient long context. MTP enables faster decoding by predicting several future tokens at once. Ascend NPUs are Huawei&\#x27;s AI accelerators, making this release notable for AI hardware diversity.
+**Background**: RSS is a web feed format that lets users subscribe to updates from multiple websites in a single news aggregator, or RSS reader. Google Reader, launched in 2005, became one of the most popular RSS readers and a platform for many third-party apps. Its shutdown in 2013 forced millions of users to find alternatives and is often cited as a major blow to RSS and the open web.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://sebastianraschka.com/llms-from-scratch/ch04/05_mla/">MLA Chapter 4 Guide | Sebastian Raschka, PhD</a></li>
-<li><a href="https://sebastianraschka.com/llm-architecture-gallery/mtp/">Multi-Token Prediction (MTP) | Sebastian Raschka, PhD</a></li>
-<li><a href="https://www.pythonalchemist.com/llm-architectures/attention-variants">Attention Variants Explained: MHA, GQA, MQA, MLA, SWA , DSA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/RSS">RSS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_Reader">Google Reader</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#LLM`, `#MoE`, `#Huawei`, `#Open Source`, `#AI`
+**Discussion**: Commenters largely agree with the post&\#x27;s thesis, recalling Google Reader&\#x27;s shutdown as the beginning of the end of the open internet. Some point out that Mozilla&\#x27;s removal of RSS features in Firefox also hurt adoption, while others recommend independent readers like NetNewsWire as viable alternatives.
+
+**Tags**: `#RSS`, `#Google Reader`, `#Open Web`, `#Web History`, `#Software`
 
 ---
 
 <a id="item-3"></a>
-## [Elevator Scheduling Algorithms: A Simulation-Based Analysis](https://john.fun/elevators) ⭐️ 8.0/10
+## [NetBSD 11.0 Released with NPF Improvements and Fast-Booting MICROVM Kernel](https://blog.netbsd.org/tnf/entry/netbsd_11_0_released) ⭐️ 8.0/10
 
-The article &\#x27;Elevators&\#x27; by john.fun presents an analysis of elevator scheduling algorithms using simulations, comparing approaches such as FCFS, SCAN, and LOOK under different conditions. It highlights the trade-offs between efficiency and fairness for each algorithm. Elevator scheduling is a classic real-world optimization problem that directly affects user experience in buildings. This analysis connects elevator algorithms to disk-scheduling concepts, showing how ideas from one domain transfer to another, and has sparked a rich community discussion about real-world behavior. The simulations compare multiple algorithms, including FCFS, SSTF, SCAN, and LOOK, each with different trade-offs in response time and fairness. Community members noted that real-world travel patterns, such as destination dispatch usage in office buildings, can make some algorithms perform differently than random simulations suggest.
+NetBSD 11.0, a major release of the BSD operating system, is now available. It introduces a new MICROVM kernel for x86 that boots in about 10 milliseconds, along with improvements to the NPF firewall including layer 2 and user/group filtering. This release strengthens NetBSD&\#x27;s position as a lightweight, portable Unix-like OS, particularly for virtualization and embedded use cases. The MICROVM kernel could enable new micro-VM and service-oriented deployments, while NPF improvements make NetBSD more competitive with Linux-based firewalls. The MICROVM kernel config is designed for QEMU&\#x27;s microvm machine type and Firecracker, with no PCI or ACPI, using VirtIO over MMIO instead. NPF now supports layer 2 filtering and user/group-based rules, complementing its existing stateful packet filter capabilities.
 
-hackernews · Jrh0203 · Jul 31, 15:17 · [Discussion](https://news.ycombinator.com/item?id=49124218)
+hackernews · jaypatelani · Aug 1, 17:56 · [Discussion](https://news.ycombinator.com/item?id=49136736)
 
-**Background**: The elevator algorithm, also known as SCAN, is a disk-scheduling algorithm that determines the motion of a disk arm while servicing read and write requests. In elevator scheduling, the elevator car moves in one direction until no more requests are ahead, then reverses direction, similar to how a disk head sweeps across tracks. LOOK is a variant that only goes as far as the last request in each direction, saving unnecessary travel. These algorithms are widely taught in computer science courses and are also used in game simulations like Elevator Saga.
+**Background**: NetBSD is a free, open-source Unix-like operating system descended from the Berkeley Software Distribution \(BSD\), known for its portability across many hardware architectures. It is the basis for other BSDs and has historically focused on clean design, correctness, and support for older and embedded systems. The NPF packet filter, introduced in earlier NetBSD releases, provides stateful firewall functionality comparable to iptables on Linux.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Elevator_algorithm">Elevator algorithm - Wikipedia</a></li>
-<li><a href="https://dev.to/thesaltree/elevator-scheduling-algorithms-fcfs-sstf-scan-and-look-2pae">Elevator Scheduling Algorithms: FCFS, SSTF, SCAN, and LOOK - DEV Community</a></li>
-<li><a href="https://www.geeksforgeeks.org/dsa/scan-elevator-disk-scheduling-algorithms/">SCAN (Elevator) Disk Scheduling Algorithms - GeeksforGeeks</a></li>
+<li><a href="https://www.phoronix.com/news/smolBSD">smolBSD Builds On The NetBSD-MicroVM Kernel For Booting To Service VMs In Milliseconds - Phoronix</a></li>
+<li><a href="https://wiki.netbsd.org/users/imil/microvm/">microvm</a></li>
+<li><a href="https://www.wikiwand.com/EN/NPF_%28firewall%29">NPF ( firewall ) - Wikiwand</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters connected elevator scheduling to disk scheduling, noting that HDDs behave like &\#x27;one really long elevator&\#x27; and that SCAN is a true disk-scheduling algorithm. Several shared practical experiences: destination dispatch in real buildings often has skewed travel patterns \(e.g., everyone going to the ground floor\), which may make it worse than random simulations suggest, while one developer of the elevator game Sky Lobby said they chose LOOK because it matched player expectations.
+**Discussion**: Commenters generally welcomed the release, highlighting the MICROVM kernel&\#x27;s fast boot time and NPF&\#x27;s user/group filtering as valuable. Some expressed curiosity about the current status of BSDs compared to Linux, while one user asked whether Wine on NetBSD is still viable for running Windows software on an old ThinkPad.
 
-**Tags**: `#algorithms`, `#simulation`, `#elevators`, `#systems`, `#scheduling`
+**Tags**: `#NetBSD`, `#BSD`, `#Operating Systems`, `#Open Source`, `#Release`
 
 ---
 
 <a id="item-4"></a>
-## [YC-Backed qm Launches Multiplayer Agent Harness for Work](https://github.com/yc-software/qm) ⭐️ 8.0/10
+## [DeepSeek V4-Flash-0731: 304B-Parameter Model, Strong Agentic Skills, Low Cost](https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731/#atom-everything) ⭐️ 8.0/10
 
-qm, a YC-backed multiplayer agent harness for work, has been published on GitHub at github.com/yc-software/qm. It uses per-person scopes and shared rooms to coordinate company-wide AI assistants, following the pattern of local coding agents like OpenCode, Codex, and Claude Code. qm directly tackles scoping, which practitioners call the hardest problem in multiplayer agents, by pairing per-person scopes with shared rooms for company-wide coordination. As a YC-backed project in the fast-moving LLM agent space, it signals a shift from single-agent loops toward orchestrating AI assistants across entire teams. In qm, the agent acts as the person it works for, using that person&\#x27;s credentials and permissions, with every action audited. An organization sets one overall security posture, and narrower per-person scopes can only tighten it further.
+On July 31, 2026, DeepSeek released V4-Flash-0731, a 304-billion-parameter language model with substantially enhanced agentic capabilities. Independent benchmark platform Artificial Analysis ranks it ahead of the larger 428B MiniMax M3, while its $0.14 per million input tokens and $0.27 per million output tokens pricing makes it arguably the best value-per-intelligence model currently available. This release strengthens the trend of small, efficient open-weight models rivaling much larger ones, making advanced agentic AI more affordable for developers. It also intensifies price competition among LLM providers, which could pressure other vendors to cut costs. The 304B model is distributed as 167GB of weights on Hugging Face, and early tests show output quality depends heavily on reasoning effort: Simon Willison got a poorly drawn pelican with default settings but a much better result with \`-o reasoning\_effort high\` via OpenRouter. It also scored around 50 on the Artificial Analysis Intelligence Index, far ahead of rivals at similar or higher cost.
 
-hackernews · tosh · Jul 31, 18:04 · [Discussion](https://news.ycombinator.com/item?id=49126604)
+rss · Simon Willison · Jul 31, 23:59
 
-**Background**: An agent harness is the complete software infrastructure wrapping an LLM, including the orchestration loop, tools, and memory; the term was formalized around early 2026, though the concept predates it. In harness engineering, developers treat this scaffolding as a real artifact and tighten it whenever an agent makes a mistake. For multiplayer coordination, tools like Agent Room let AI coding agents on different machines collaborate in persistent shared rooms, often over the Model Context Protocol \(MCP\).
+**Background**: Large language models are neural networks trained on vast amounts of text to predict and generate text; recently they have gained &\#x27;agentic&\#x27; capabilities, meaning they can plan, use external tools, and take multi-step actions rather than simply responding to prompts. DeepSeek is a Chinese AI lab known for releasing powerful open-weight models at low cost. The Artificial Analysis Intelligence Index is an aggregated benchmark score that combines multiple tests to roughly measure a model&\#x27;s overall intelligence, which the platform then compares against cost per task.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://github.com/yc-software/qm">GitHub - yc-software/ qm : Multiplayer agent harness for work · GitHub</a></li>
-<li><a href="https://habr.com/ru/articles/1023316/">Что такое Harness ? Полный разбор на примере Claude... / Хабр</a></li>
-<li><a href="https://www.agent-room.com/">Agent Room — Multi-agent collaboration for Claude Code, Codex, Cursor &amp; Gemini</a></li>
+<li><a href="https://artificialanalysis.ai/">AI Model &amp; API Providers Analysis | Artificial Analysis</a></li>
+<li><a href="https://towardsdev.com/the-rise-of-agentic-reasoning-how-llms-are-evolving-from-thinkers-to-doers-3eaf896bf097">The Rise of Agentic Reasoning: How LLMs Are... | Towards Dev</a></li>
 
 </ul>
 </details>
 
-**Discussion**: Commenters largely welcomed the direction: one builder called per-person scopes plus shared rooms &\#x27;a sane answer for a company-wide assistant&\#x27; and found YC shipping this &\#x27;validating and a little surreal.&\#x27; A humorous anecdote described an agent scheduling meetings with other agents without human involvement, while another commenter asked for a &quot;QM vs Cowork&quot; comparison and questioned qm&\#x27;s advantage over Claude Cowork. Others noted the difficulty of understanding new LLM-era apps and pointed to related tools like Garry Tan&\#x27;s gstack.
-
-**Tags**: `#AI agents`, `#multiplayer`, `#LLM tools`, `#YC`, `#developer tools`
+**Tags**: `#AI`, `#LLM`, `#DeepSeek`, `#model release`, `#artificial intelligence`
 
 ---
 
 <a id="item-5"></a>
-## [Stateless MCP 2.0 Reignites Interest, Inspires mcp-explorer and datasette-mcp](https://simonwillison.net/2026/Jul/31/stateless-mcp/#atom-everything) ⭐️ 8.0/10
+## [How Symmetric Are the Insides of a Go Network?](https://www.reddit.com/r/MachineLearning/comments/1vcrki2/how_symmetric_are_the_insides_of_a_go_network_r/) ⭐️ 8.0/10
 
-MCP 2.0, the 2026-07-28 Model Context Protocol specification, introduces stateless MCP, eliminating the need for session IDs. Simon Willison built three new tools this week, including mcp-explorer and datasette-mcp. This is the most significant change to MCP since its launch, greatly simplifying client and server implementation and enabling horizontal scaling for remote servers. It may reignite adoption of MCP among AI agent developers, especially for smaller models and auditable workflows. Stateless MCP uses a single HTTP request with MCP-Protocol-Version and Mcp-Method headers instead of two round-trips with a Mcp-Session-Id. mcp-explorer is a CLI for interactively probing MCP servers, while datasette-mcp provides read-only access to Datasette instances.
+David Wu, the maintainer of the open-source Go program KataGo, published an interpretability study examining how superhuman Go-playing neural networks handle the board&\#x27;s rotation/reflection symmetry. The study probes whether the networks learn orientation-independent internal representations, given that training only relies on stochastic 8-fold data augmentation rather than enforced symmetry. This is a valuable interpretability deep-dive from a reputable AI research engineer, offering rare insight into how strong game-playing models internally organize knowledge. It could inform how symmetry priors and data augmentation strategies are designed for neural network training more broadly. The study and its write-up were driven almost entirely by AI, with detailed human direction and feedback throughout the process. Code is linked from the study page, the article is written for accessibility to non-ML readers, and Wu notes that one of the findings was unexpected.
 
-rss · Simon Willison · Jul 31, 23:13
+reddit · r/MachineLearning · /u/icosaplex · Aug 1, 16:18
 
-**Background**: MCP \(Model Context Protocol\) is an open standard introduced by Anthropic in November 2024 to standardize how LLM-powered agents connect to external tools and data. Earlier stateful MCP required a two-step initialization to create a session, which complicated scaling. The new stateless design sends all needed context in each request, making it easier to build and deploy servers. This shift comes after MCP&\#x27;s popularity waned somewhat in 2025 amid competition from approaches like Claude Skills.
+**Background**: Go is a board game whose rules are fully invariant under rotation and reflection, so a perfectly rational network should not care about board orientation. KataGo is a leading open-source Go engine trained via self-play. Its models do not enforce symmetry; instead, each training batch is randomly rotated or reflected as data augmentation. This study asks whether the network exploits that augmentation to build orientation-independent internal concepts or instead memorizes orientation-specific features.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Model_Context_Protocol">Model Context Protocol - Wikipedia</a></li>
-<li><a href="https://stackpicks.dev/blog/mcp-2-0-explained-2026">MCP 2 . 0 Explained — Stateless Core, OAuth Login... — StackPicks</a></li>
-<li><a href="https://www.anthropic.com/news/model-context-protocol">Introducing the Model Context Protocol \ Anthropic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/KataGo">KataGo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_augmentation">Data augmentation - Wikipedia</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#MCP`, `#AI agents`, `#Model Context Protocol`, `#software engineering`, `#developer tools`
+**Tags**: `#interpretability`, `#neural networks`, `#Go`, `#symmetry`, `#KataGo`
 
 ---
 
 <a id="item-6"></a>
-## [Simon Willison Joins Oxide and Friends to Discuss Open-Weight AI Revolution](https://simonwillison.net/2026/Jul/31/oxide-and-friends/#atom-everything) ⭐️ 8.0/10
+## [VLMs Score Well on Benchmarks While Silently Erasing Clinical Terms](https://www.reddit.com/r/MachineLearning/comments/1vcipzz/vlms_can_score_well_on_benchmarks_while_silently/) ⭐️ 8.0/10
 
-Simon Willison appeared on the Oxide and Friends podcast on July 31, 2026 to discuss the open-weight AI model revolution, including Kimi K3&\#x27;s parity with proprietary frontier models, recent AI security incidents, and industry letters on open weights. He also noted that DeepSeek V4 Flash and Anthropic&\#x27;s own cyber incident occurred just days after the recording, quickly making the episode out-of-date. This expert discussion highlights a pivotal moment in AI: open-weight models like Kimi K3 are now competing head-to-head with proprietary models, challenging the assumption that frontier AI must remain closed. The industry letters and the notable absence of Anthropic&\#x27;s signature underscore a deepening debate over openness, security, and American AI leadership. Kimi K3 is a 2.8-trillion-parameter open-source model built on Kimi Delta Attention and Attention Residuals, with native vision and a 1-million-token context window, released under a Modified MIT license. The episode also covered Golden Gate Claude, the Zizians case, Soviet Marburg virus research, and the lead-crime hypothesis, and Simon added a new prediction that the Pope will say something about open models by the end of the year.
+A new paper shows that standard evaluation metrics for VLM-generated radiology reports reward repetitive templates and hide the erasure of clinically meaningful terms. The authors introduce a framework to actually measure term erasure and the introduction of biased terms. High benchmark scores can mask serious clinical utility problems in radiology-report-generation models, potentially misleading model validation and deployment in healthcare. This work pushes the field toward evaluation metrics that reflect real clinical language rather than surface-level text similarity. The paper \(arXiv:2603.01625\) specifically focuses on chest X-ray report generation, showing that reports labeled &\#x27;normal&\#x27; or lacking clinical terms can still score well on existing metrics. The proposed framework quantifies erasure of rare but clinically meaningful words and detects hallucinated or biased terminology.
 
-rss · Simon Willison · Jul 31, 21:33
+reddit · r/MachineLearning · /u/ade17\_in · Aug 1, 09:27
 
-**Background**: Open-weight models are AI models whose core components, including the trained parameters or &\#x27;weights&\#x27;, are publicly released so that anyone can download and run them. Kimi K3, from Moonshot AI, is one of the latest flagships in this category, while DeepSeek simultaneously released DeepSeek V4 Flash on July 31, 2026. This rapid succession of releases has intensified discussions about whether open-weight models can safely match or even surpass closed proprietary systems.
+**Background**: Vision-language models \(VLMs\) are multimodal AI systems that jointly interpret images and text, and they are increasingly used for tasks such as generating radiology reports from chest X-rays. Radiology report generation \(RRG\) aims to automate this clinical documentation, but conventional text-generation metrics like BLEU or ROUGE may not reflect whether the report is clinically correct. These metrics can reward generic language and overlook missing findings, which is exactly the problem this paper addresses.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.kimi.com/blog/kimi-k3">Kimi K 3 Tech Blog: Open Frontier Intelligence</a></li>
-<li><a href="https://hai.stanford.edu/ai-definitions/what-is-an-open-weight-model">What is an Open-Weight Model? - Stanford HAI</a></li>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek -ai/ DeepSeek - V 4 - Flash · Hugging Face</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vision_Language_Models_%28VLM%29">Vision Language Models (VLM)</a></li>
+<li><a href="https://huggingface.co/blog/vlms">Vision Language Models Explained</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12292164/">Advancements in Radiology Report Generation : A Comprehensive...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#open-weight models`, `#AI`, `#podcast`, `#Simon Willison`, `#Kimi K3`
+**Tags**: `#Vision-Language Models`, `#Medical Imaging`, `#Evaluation Metrics`, `#Radiology`, `#Bias`
 
 ---
 
 <a id="item-7"></a>
-## [German Court Rules AI Music Firm Suno Violated Copyright](https://www.dw.com/en/german-court-rules-that-ai-music-firm-suno-violated-copyrights/a-78152227) ⭐️ 8.0/10
+## [Major Labels Propose Barring AI Songs from Music Charts](https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts) ⭐️ 8.0/10
 
-The Munich Regional Court ruled against AI music company Suno, finding that it infringed copyright by using protected music to train its models. The court ordered Suno to disclose illegal gains and pay unspecified damages, and Suno says it will consider an appeal. This is one of the first major cases testing how copyright law applies to AI music training, so the ruling could set a precedent for the AI industry worldwide. It strengthens the hand of rights holders like GEMA in seeking licensing agreements and may push AI companies toward greater transparency about training data. The lawsuit, filed by GEMA in January 2025, represents more than 95,000 German musicians and over 2 million rights holders worldwide; GEMA demonstrated that Suno-generated songs were highly similar to original works. GEMA&\#x27;s stated goal is to achieve equal licensing negotiations.
+Universal Music, Sony Music, and Warner Music jointly proposed that AI-generated songs must be &\#x27;substantially human-created&\#x27; to qualify for official music charts. The proposal, supported by IFPI, goes beyond earlier labeling schemes by requiring licensed AI services, copyrighted training data, and compliance with anti-manipulation and personality rights laws. This is a major coordinated move by the music industry to set clear boundaries for AI-generated music, potentially shaping future copyright and chart policies globally. It could affect artists, AI developers, streaming platforms, and how AI-driven creativity is commercially valued. The key standard &\#x27;substantially human-created&\#x27; remains vaguely defined, and neither Sony Music nor Universal Music responded to requests for comment. No chart operator has indicated immediate adoption, so the proposal currently has no binding effect.
 
-telegram · zaihuapd · Jul 31, 13:11
+telegram · zaihuapd · Aug 1, 02:53
 
-**Background**: Suno is a generative AI music creation platform that produces songs with vocals and instrumentation from text prompts. GEMA is a German collective management organization that manages the rights of over 90,000 members and more than 2 million rights holders globally. This case tests whether using copyrighted works to train AI models without licensing constitutes infringement.
+**Background**: Music charts such as the Billboard Hot 100 are major commercial and cultural benchmarks in the music industry. IFPI is the global trade body for recorded music, while RIAA represents the U.S. recording industry. As generative AI tools become capable of producing convincing vocals and instrumentals, record labels worry about unlicensed copying, dilution of human artistry, and chart manipulation, prompting this proposal.
+
+**Tags**: `#AI music`, `#copyright`, `#music industry`, `#policy`, `#AI regulation`
+
+---
+
+<a id="item-8"></a>
+## [Microsoft Confirms Copilot &\#x27;Super App&\#x27; Launch This Year](https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed) ⭐️ 8.0/10
+
+Microsoft CEO Satya Nadella confirmed on an earnings call that the company will release a Copilot &\#x27;super app&\#x27; this year, combining chat, coding, and agentic capabilities for both consumers and enterprises. The app will merge Copilot chat, GitHub Copilot, Copilot Cowork, and Autopilot systems into a single experience. This consolidation positions Microsoft&\#x27;s AI offerings as a unified platform, potentially reshaping how users and developers access AI tools. It also intensifies competition with OpenAI&\#x27;s ChatGPT Work and other AI super apps, signaling a broader industry shift toward all-in-one AI applications. Nadella described Copilot evolving from a chat tool to Cowork and then Autopilots, with code features being folded into the super app this quarter. Microsoft&\#x27;s quarterly revenue reached $90 billion, driven primarily by AI and cloud businesses, providing financial momentum for the launch.
+
+telegram · zaihuapd · Aug 1, 13:18
+
+**Background**: Copilot is Microsoft&\#x27;s AI assistant embedded across its products, while Copilot Cowork is an AI automation layer in Microsoft 365 that plans and executes multi-step tasks across Outlook and Teams. Autopilot refers to more autonomous AI agents that handle entire workflows. A &\#x27;super app&\#x27; consolidates multiple services into one platform, a concept popularized by apps like WeChat, and now gaining traction in the AI space.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Suno_%28platform%29">Suno (platform) - Wikipedia</a></li>
-<li><a href="https://www.gema.de/en/w/help/gema/organisation/questions-and-answers/what-is-gema">What is GEMA and what is its purpose?</a></li>
+<li><a href="https://www.linkedin.com/pulse/microsoft-launches-copilot-cowork-built-anthropic-cross-m365-bora-g2xzc">Microsoft launches Copilot Cowork , built with Anthropic...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Agentic_AI">Agentic AI</a></li>
+<li><a href="https://windowsforum.com/threads/microsoft-copilot-cowork-ga-agentic-ai-credit-billing-and-enterprise-governance.431036/">Microsoft Copilot Cowork GA: Agentic AI, Credit... | Windows Forum</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#AI`, `#copyright`, `#legal`, `#music`, `#Suno`
+**Tags**: `#Microsoft`, `#Copilot`, `#AI`, `#Super App`, `#Agents`
+
+---
+
+<a id="item-9"></a>
+## [ChangXin Memory&\#x27;s LPDDR6 Nears Validation, Reaching 12800 Mbps](https://finance.sina.com.cn/stock/t/2026-08-01/doc-inikuwea8878362.shtml) ⭐️ 8.0/10
+
+ChangXin Memory&\#x27;s first LPDDR6 product is nearing the end of R&amp;D validation, with a design speed of 12800 Mbps and a base speed of 10667 Mbps. The company sent samples to core customers in March and could achieve global first mass production in the second half of 2026. This marks a major milestone for China&\#x27;s memory industry, shifting from a follower in high-end storage technology to a leader in cutting-edge specifications. It would provide domestically controlled high-speed memory for flagship phones and on-device AI hardware, reducing reliance on foreign memory suppliers. The LPDDR6 product uses 16 Gb dies for a 16 GB chip capacity and comes in a 1295-ball POP package. Compared with LPDDR5X, it features notable improvements in low-power design and RAS \(reliability, availability, and serviceability\) functions.
+
+telegram · zaihuapd · Aug 1, 15:30
+
+**Background**: LPDDR is low-power double data rate memory used mainly in smartphones and mobile devices; it transfers data on both clock edges. The 1295-ball POP \(package-on-package\) format stacks memory atop a processor to save space. RAS in memory refers to reliability, availability, and serviceability, important for enterprise and AI workloads. ChangXin Memory is a leading Chinese DRAM maker, so its LPDDR6 progress is watched closely given export controls and supply chain security concerns.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://blog.memory4less.com/2022/11/25/what-is-lpddr-low-power-double-data-rate-memory/">What Is LPDDR (Low Power Double Data Rate Memory )?</a></li>
+<li><a href="https://www.nxp.com/packages/SOT1629-1">SOT1629-1: BGA 1295 Ball Grid Array | NXP Semiconductors</a></li>
+<li><a href="https://www.allacronyms.com/RAS/memory">RAS Memory Abbreviation Meaning</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#LPDDR6`, `#semiconductor`, `#memory`, `#China tech`, `#hardware`
 
 ---
